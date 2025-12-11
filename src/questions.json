@@ -1,535 +1,688 @@
 [
   {
     "NY-3": {
-      "NF": {
-        "name": "Number and Operations in Fractions",
-        "description": "Develop understanding of fractions as numbers.",
-        "questions": [
-          {
-            "question": "A pizza is cut into 4 equal slices. Mia eats 1 slice. What fraction of the pizza did she eat?",
-            "answers": {
-              "A": "1/2",
-              "B": "1/3",
-              "C": "1/4",
-              "D": "1/5"
+      "Reading": {
+        "R2": {
+          "name": "Determine a theme or central idea",
+          "description": "Determine a theme or central idea of a text and how it is conveyed through key details and events.",
+          "questions": [
+            {
+              "question": "In a story, a girl practices every day until she finally learns to ride her bike. What is the central theme?",
+              "answers": {
+                "A": "Helping others is important.",
+                "B": "Practice and perseverance lead to success.",
+                "C": "Biking is fun.",
+                "D": "Friends can teach new skills."
+              },
+              "correct": "B"
             },
-            "correct": "C"
-          },
-          {
-            "question": "Liam drinks 2 out of 8 equal parts of a bottle of juice. What fraction of the bottle did he drink?",
-            "answers": {
-              "A": "1/2",
-              "B": "2/8",
-              "C": "1/4",
-              "D": "3/8"
+            {
+              "question": "A tale describes a boy who keeps bragging. Eventually, no one listens to him when he tells the truth. What theme does the story teach?",
+              "answers": {
+                "A": "Telling the truth builds trust.",
+                "B": "Winning is more important than honesty.",
+                "C": "Bragging makes you popular.",
+                "D": "Friends are not important."
+              },
+              "correct": "A"
             },
-            "correct": "B"
-          },
-          {
-            "question": "Which fraction is equal to one half?",
-            "answers": {
-              "A": "2/4",
-              "B": "1/3",
-              "C": "3/4",
-              "D": "1/5"
+            {
+              "question": "A group of animals work together to build a shelter before winter. What is the main idea the author wants readers to learn?",
+              "answers": {
+                "A": "Winter is very cold.",
+                "B": "Working together helps everyone succeed.",
+                "C": "Animals live in shelters.",
+                "D": "Animals gather food in winter."
+              },
+              "correct": "B"
+            }
+          ]
+        },
+        "R3": {
+          "name": "Describe character traits, motivations, or feelings",
+          "description": "Describe character traits, motivations, or feelings of characters in a text.",
+          "questions": [
+            {
+              "question": "In a story, Emma always shares her supplies with classmates who forget theirs. What trait best describes Emma?",
+              "answers": {
+                "A": "Selfish",
+                "B": "Helpful",
+                "C": "Lazy",
+                "D": "Shy"
+              },
+              "correct": "B"
             },
-            "correct": "A"
-          },
-          {
-            "question": "Emma shaded 3 out of 6 equal parts of a rectangle. What fraction of the rectangle is shaded?",
-            "answers": {
-              "A": "1/6",
-              "B": "2/3",
-              "C": "3/6",
-              "D": "3/3"
+            {
+              "question": "Jack rushes to finish his chores because he wants to play outside. What motivates Jack?",
+              "answers": {
+                "A": "He loves doing chores.",
+                "B": "He wants to play outside.",
+                "C": "He is afraid of his chores.",
+                "D": "He wants to take a nap."
+              },
+              "correct": "B"
             },
-            "correct": "C"
-          },
-          {
-            "question": "Which fraction is the greatest?",
-            "answers": {
-              "A": "1/8",
-              "B": "3/8",
-              "C": "5/8",
-              "D": "2/8"
+            {
+              "question": "Maria frowns and sighs after her team loses the game. How is Maria likely feeling?",
+              "answers": {
+                "A": "Excited",
+                "B": "Proud",
+                "C": "Disappointed",
+                "D": "Confused"
+              },
+              "correct": "C"
+            }
+          ]
+        },
+        "R4": {
+          "name": "Determine the meaning of words and phrases",
+          "description": "Determine the meaning of words and phrases as they are used in a text, including figurative language such as metaphors, similes, and personification.",
+          "questions": [
+            {
+              "question": "In the sentence, \"The classroom was a zoo,\" what does this metaphor mean?",
+              "answers": {
+                "A": "There were animals in the room.",
+                "B": "The classroom was noisy and chaotic.",
+                "C": "The teacher took the class to the zoo.",
+                "D": "The classroom looked like a forest."
+              },
+              "correct": "B"
             },
-            "correct": "C"
-          },
-          {
-            "question": "On a number line from 0 to 1, which fraction is closest to 1?",
-            "answers": {
-              "A": "1/4",
-              "B": "2/4",
-              "C": "3/4",
-              "D": "1/2"
+            {
+              "question": "In the sentence, \"Her smile was as bright as the sun,\" what does the simile suggest?",
+              "answers": {
+                "A": "Her smile hurt people's eyes.",
+                "B": "Her smile was warm and cheerful.",
+                "C": "She was outside on a sunny day.",
+                "D": "Her smile was too big."
+              },
+              "correct": "B"
             },
-            "correct": "C"
-          },
-          {
-            "question": "Which pair of fractions are equal?",
-            "answers": {
-              "A": "1/2 and 2/3",
-              "B": "2/4 and 1/2",
-              "C": "3/4 and 2/4",
-              "D": "1/3 and 3/4"
+            {
+              "question": "In the phrase, \"The wind whispered through the trees,\" which type of figurative language is used?",
+              "answers": {
+                "A": "Metaphor",
+                "B": "Simile",
+                "C": "Personification",
+                "D": "Literal meaning"
+              },
+              "correct": "C"
+            }
+          ]
+        },
+        "R6": {
+          "name": "Discuss how the reader's point of view or perspective may differ from that of the author",
+          "description": "Discuss how the reader's point of view or perspective may differ from that of the author.",
+          "questions": [
+            {
+              "question": "An author writes that waking up early is the best way to start the day. A reader prefers sleeping late. How do their perspectives differ?",
+              "answers": {
+                "A": "They both enjoy waking up early.",
+                "B": "The reader agrees completely with the author.",
+                "C": "The author likes early mornings, while the reader likes sleeping late.",
+                "D": "Neither has an opinion about mornings."
+              },
+              "correct": "C"
             },
-            "correct": "B"
-          },
-          {
-            "question": "Noah shaded 4/8 of a shape. Which fraction names the same amount?",
-            "answers": {
-              "A": "1/4",
-              "B": "1/2",
-              "C": "3/8",
-              "D": "2/8"
+            {
+              "question": "The author describes snow as magical and exciting. A reader thinks snow makes travel difficult. What does this show?",
+              "answers": {
+                "A": "The author and reader have the same point of view.",
+                "B": "The reader has no opinion.",
+                "C": "Both dislike snow.",
+                "D": "The author and reader have different perspectives about snow."
+              },
+              "correct": "D"
             },
-            "correct": "B"
-          },
-          {
-            "question": "Which fraction shows three out of five equal parts?",
-            "answers": {
-              "A": "3/4",
-              "B": "3/5",
-              "C": "5/3",
-              "D": "1/5"
-            },
-            "correct": "B"
-          },
-          {
-            "question": "Which fraction is less than 1/2?",
-            "answers": {
-              "A": "3/4",
-              "B": "2/3",
-              "C": "1/4",
-              "D": "4/5"
-            },
-            "correct": "C"
-          }
-        ]
+            {
+              "question": "The author writes about how fun it is to move to a new town, but a reader feels nervous about moving. What is the difference in viewpoint?",
+              "answers": {
+                "A": "The author feels positive, while the reader feels unsure.",
+                "B": "Both the author and reader feel nervous.",
+                "C": "The reader loves moving more than the author.",
+                "D": "There is no difference in viewpoint."
+              },
+              "correct": "A"
+            }
+          ]
+        }
       },
-      "MD": {
-        "name": "Measurement and Data",
-        "description": "Represent and interpret data.",
-        "questions": [
-          {
-            "question": "A line plot shows how many books students read: 3, 4, 4, 5, 5, 5, 6. How many students read 5 books?",
-            "answers": {
-              "A": "1",
-              "B": "2",
-              "C": "3",
-              "D": "4"
+
+      "Math": {
+        "NF": {
+          "name": "Number and Operations in Fractions",
+          "description": "Develop understanding of fractions as numbers.",
+          "questions": [
+            {
+              "question": "A pizza is cut into 4 equal slices. Mia eats 1 slice. What fraction of the pizza did she eat?",
+              "answers": {
+                "A": "1/2",
+                "B": "1/3",
+                "C": "1/4",
+                "D": "1/5"
+              },
+              "correct": "C"
             },
-            "correct": "C"
-          },
-          {
-            "question": "Ben measures a pencil that is 7 centimeters long. Amy's pencil is 3 centimeters longer. How long is Amy's pencil?",
-            "answers": {
-              "A": "8 cm",
-              "B": "9 cm",
-              "C": "10 cm",
-              "D": "11 cm"
+            {
+              "question": "Liam drinks 2 out of 8 equal parts of a bottle of juice. What fraction of the bottle did he drink?",
+              "answers": {
+                "A": "1/2",
+                "B": "2/8",
+                "C": "1/4",
+                "D": "3/8"
+              },
+              "correct": "B"
             },
-            "correct": "C"
-          },
-          {
-            "question": "A bar graph shows that 6 students chose red, 4 chose blue, and 2 chose green as their favorite color. How many students were asked in all?",
-            "answers": {
-              "A": "10",
-              "B": "11",
-              "C": "12",
-              "D": "13"
+            {
+              "question": "Which fraction is equal to one half?",
+              "answers": {
+                "A": "2/4",
+                "B": "1/3",
+                "C": "3/4",
+                "D": "1/5"
+              },
+              "correct": "A"
             },
-            "correct": "C"
-          },
-          {
-            "question": "Sara started her homework at 3:15 p.m. and finished at 3:45 p.m. How long did she work?",
-            "answers": {
-              "A": "15 minutes",
-              "B": "20 minutes",
-              "C": "30 minutes",
-              "D": "45 minutes"
+            {
+              "question": "Emma shaded 3 out of 6 equal parts of a rectangle. What fraction of the rectangle is shaded?",
+              "answers": {
+                "A": "1/6",
+                "B": "2/3",
+                "C": "3/6",
+                "D": "3/3"
+              },
+              "correct": "C"
             },
-            "correct": "C"
-          },
-          {
-            "question": "A rectangle has a length of 8 centimeters and a width of 3 centimeters. What is the perimeter of the rectangle?",
-            "answers": {
-              "A": "11 cm",
-              "B": "16 cm",
-              "C": "22 cm",
-              "D": "24 cm"
+            {
+              "question": "Which fraction is the greatest?",
+              "answers": {
+                "A": "1/8",
+                "B": "3/8",
+                "C": "5/8",
+                "D": "2/8"
+              },
+              "correct": "C"
             },
-            "correct": "C"
-          },
-          {
-            "question": "A picture graph shows that each picture of an apple stands for 2 apples. If there are 5 apple pictures, how many apples does that represent?",
-            "answers": {
-              "A": "5",
-              "B": "8",
-              "C": "10",
-              "D": "12"
+            {
+              "question": "On a number line from 0 to 1, which fraction is closest to 1?",
+              "answers": {
+                "A": "1/4",
+                "B": "2/4",
+                "C": "3/4",
+                "D": "1/2"
+              },
+              "correct": "C"
             },
-            "correct": "C"
-          },
-          {
-            "question": "A class records the number of pets each student has: 0, 1, 2, 2, 3, 1, 0, 2. How many students have 2 pets?",
-            "answers": {
-              "A": "2",
-              "B": "3",
-              "C": "4",
-              "D": "5"
+            {
+              "question": "Which pair of fractions are equal?",
+              "answers": {
+                "A": "1/2 and 2/3",
+                "B": "2/4 and 1/2",
+                "C": "3/4 and 2/4",
+                "D": "1/3 and 3/4"
+              },
+              "correct": "B"
             },
-            "correct": "B"
-          },
-          {
-            "question": "Tom has a rope that is 15 meters long. He cuts off 6 meters. How much rope is left?",
-            "answers": {
-              "A": "7 m",
-              "B": "8 m",
-              "C": "9 m",
-              "D": "10 m"
+            {
+              "question": "Noah shaded 4/8 of a shape. Which fraction names the same amount?",
+              "answers": {
+                "A": "1/4",
+                "B": "1/2",
+                "C": "3/8",
+                "D": "2/8"
+              },
+              "correct": "B"
             },
-            "correct": "C"
-          },
-          {
-            "question": "A bar graph shows 7 students like soccer, 5 like basketball, and 3 like baseball. How many more students like soccer than baseball?",
-            "answers": {
-              "A": "2",
-              "B": "3",
-              "C": "4",
-              "D": "5"
+            {
+              "question": "Which fraction shows three out of five equal parts?",
+              "answers": {
+                "A": "3/4",
+                "B": "3/5",
+                "C": "5/3",
+                "D": "1/5"
+              },
+              "correct": "B"
             },
-            "correct": "C"
-          },
-          {
-            "question": "Jenny pours 250 milliliters of juice into a cup. Then she adds 150 milliliters more. How much juice is in the cup now?",
-            "answers": {
-              "A": "300 mL",
-              "B": "350 mL",
-              "C": "400 mL",
-              "D": "450 mL"
+            {
+              "question": "Which fraction is less than 1/2?",
+              "answers": {
+                "A": "3/4",
+                "B": "2/3",
+                "C": "1/4",
+                "D": "4/5"
+              },
+              "correct": "C"
+            }
+          ]
+        },
+
+        "MD": {
+          "name": "Measurement and Data",
+          "description": "Represent and interpret data.",
+          "questions": [
+            {
+              "question": "A line plot shows how many books students read: 3, 4, 4, 5, 5, 5, 6. How many students read 5 books?",
+              "answers": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "4"
+              },
+              "correct": "C"
             },
-            "correct": "C"
-          }
-        ]
-      },
-      "G": {
-        "name": "Geometry",
-        "description": "Reason with shapes and their attributes.",
-        "questions": [
-          {
-            "question": "Which shape has 3 sides and 3 corners?",
-            "answers": {
-              "A": "Square",
-              "B": "Triangle",
-              "C": "Rectangle",
-              "D": "Circle"
+            {
+              "question": "Ben measures a pencil that is 7 centimeters long. Amy's pencil is 3 centimeters longer. How long is Amy's pencil?",
+              "answers": {
+                "A": "8 cm",
+                "B": "9 cm",
+                "C": "10 cm",
+                "D": "11 cm"
+              },
+              "correct": "C"
             },
-            "correct": "B"
-          },
-          {
-            "question": "Which shape has 4 equal sides and 4 right angles?",
-            "answers": {
-              "A": "Rectangle",
-              "B": "Triangle",
-              "C": "Square",
-              "D": "Pentagon"
+            {
+              "question": "A bar graph shows that 6 students chose red, 4 chose blue, and 2 chose green as their favorite color. How many students were asked in all?",
+              "answers": {
+                "A": "10",
+                "B": "11",
+                "C": "12",
+                "D": "13"
+              },
+              "correct": "C"
             },
-            "correct": "C"
-          },
-          {
-            "question": "How many sides does a hexagon have?",
-            "answers": {
-              "A": "4",
-              "B": "5",
-              "C": "6",
-              "D": "8"
+            {
+              "question": "Sara started her homework at 3:15 p.m. and finished at 3:45 p.m. How long did she work?",
+              "answers": {
+                "A": "15 minutes",
+                "B": "20 minutes",
+                "C": "30 minutes",
+                "D": "45 minutes"
+              },
+              "correct": "C"
             },
-            "correct": "C"
-          },
-          {
-            "question": "Which shape does NOT have any straight sides?",
-            "answers": {
-              "A": "Circle",
-              "B": "Triangle",
-              "C": "Square",
-              "D": "Rectangle"
+            {
+              "question": "A rectangle has a length of 8 centimeters and a width of 3 centimeters. What is the perimeter of the rectangle?",
+              "answers": {
+                "A": "11 cm",
+                "B": "16 cm",
+                "C": "22 cm",
+                "D": "24 cm"
+              },
+              "correct": "C"
             },
-            "correct": "A"
-          },
-          {
-            "question": "A rectangle has 2 long sides and 2 short sides. How many corners does it have?",
-            "answers": {
-              "A": "2",
-              "B": "3",
-              "C": "4",
-              "D": "5"
+            {
+              "question": "A picture graph shows that each picture of an apple stands for 2 apples. If there are 5 apple pictures, how many apples does that represent?",
+              "answers": {
+                "A": "5",
+                "B": "8",
+                "C": "10",
+                "D": "12"
+              },
+              "correct": "C"
             },
-            "correct": "C"
-          },
-          {
-            "question": "Which shape is an example of a quadrilateral?",
-            "answers": {
-              "A": "Triangle",
-              "B": "Square",
-              "C": "Circle",
-              "D": "Trapezoid with 3 sides"
+            {
+              "question": "A class records the number of pets each student has: 0, 1, 2, 2, 3, 1, 0, 2. How many students have 2 pets?",
+              "answers": {
+                "A": "2",
+                "B": "3",
+                "C": "4",
+                "D": "5"
+              },
+              "correct": "B"
             },
-            "correct": "B"
-          },
-          {
-            "question": "Which shape has exactly 5 sides?",
-            "answers": {
-              "A": "Hexagon",
-              "B": "Pentagon",
-              "C": "Octagon",
-              "D": "Square"
+            {
+              "question": "Tom has a rope that is 15 meters long. He cuts off 6 meters. How much rope is left?",
+              "answers": {
+                "A": "7 m",
+                "B": "8 m",
+                "C": "9 m",
+                "D": "10 m"
+              },
+              "correct": "C"
             },
-            "correct": "B"
-          },
-          {
-            "question": "A square is also a:",
-            "answers": {
-              "A": "Triangle",
-              "B": "Circle",
-              "C": "Rectangle",
-              "D": "Hexagon"
+            {
+              "question": "A bar graph shows 7 students like soccer, 5 like basketball, and 3 like baseball. How many more students like soccer than baseball?",
+              "answers": {
+                "A": "2",
+                "B": "3",
+                "C": "4",
+                "D": "5"
+              },
+              "correct": "C"
             },
-            "correct": "C"
-          },
-          {
-            "question": "Which group of shapes are all quadrilaterals?",
-            "answers": {
-              "A": "Triangle, square, circle",
-              "B": "Square, rectangle, trapezoid",
-              "C": "Circle, hexagon, pentagon",
-              "D": "Triangle, pentagon, octagon"
+            {
+              "question": "Jenny pours 250 milliliters of juice into a cup. Then she adds 150 milliliters more. How much juice is in the cup now?",
+              "answers": {
+                "A": "300 mL",
+                "B": "350 mL",
+                "C": "400 mL",
+                "D": "450 mL"
+              },
+              "correct": "C"
+            }
+          ]
+        },
+
+        "G": {
+          "name": "Geometry",
+          "description": "Reason with shapes and their attributes.",
+          "questions": [
+            {
+              "question": "Which shape has 3 sides and 3 corners?",
+              "answers": {
+                "A": "Square",
+                "B": "Triangle",
+                "C": "Rectangle",
+                "D": "Circle"
+              },
+              "correct": "B"
             },
-            "correct": "B"
-          },
-          {
-            "question": "Which shape has 8 equal sides and 8 angles?",
-            "answers": {
-              "A": "Hexagon",
-              "B": "Octagon",
-              "C": "Pentagon",
-              "D": "Rectangle"
+            {
+              "question": "Which shape has 4 equal sides and 4 right angles?",
+              "answers": {
+                "A": "Rectangle",
+                "B": "Triangle",
+                "C": "Square",
+                "D": "Pentagon"
+              },
+              "correct": "C"
             },
-            "correct": "B"
-          }
-        ]
-      },
-      "NBT": {
-        "name": "Number and Operations in Base Ten",
-        "description": "Understand the place value system.",
-        "questions": [
-          {
-            "question": "In the number 482, what is the value of the digit 8?",
-            "answers": {
-              "A": "8",
-              "B": "80",
-              "C": "800",
-              "D": "8,000"
+            {
+              "question": "How many sides does a hexagon have?",
+              "answers": {
+                "A": "4",
+                "B": "5",
+                "C": "6",
+                "D": "8"
+              },
+              "correct": "C"
             },
-            "correct": "B"
-          },
-          {
-            "question": "Which number is the same as 3 hundreds, 5 tens, and 2 ones?",
-            "answers": {
-              "A": "352",
-              "B": "325",
-              "C": "532",
-              "D": "523"
+            {
+              "question": "Which shape does NOT have any straight sides?",
+              "answers": {
+                "A": "Circle",
+                "B": "Triangle",
+                "C": "Square",
+                "D": "Rectangle"
+              },
+              "correct": "A"
             },
-            "correct": "A"
-          },
-          {
-            "question": "Round 368 to the nearest ten.",
-            "answers": {
-              "A": "360",
-              "B": "370",
-              "C": "380",
-              "D": "400"
+            {
+              "question": "A rectangle has 2 long sides and 2 short sides. How many corners does it have?",
+              "answers": {
+                "A": "2",
+                "B": "3",
+                "C": "4",
+                "D": "5"
+              },
+              "correct": "C"
             },
-            "correct": "B"
-          },
-          {
-            "question": "Which number is greater?",
-            "answers": {
-              "A": "497",
-              "B": "479",
-              "C": "447",
-              "D": "497 and 479 are equal"
+            {
+              "question": "Which shape is an example of a quadrilateral?",
+              "answers": {
+                "A": "Triangle",
+                "B": "Square",
+                "C": "Circle",
+                "D": "Trapezoid with 3 sides"
+              },
+              "correct": "B"
             },
-            "correct": "A"
-          },
-          {
-            "question": "What is 400 + 20 + 7?",
-            "answers": {
-              "A": "427",
-              "B": "472",
-              "C": "247",
-              "D": "274"
+            {
+              "question": "Which shape has exactly 5 sides?",
+              "answers": {
+                "A": "Hexagon",
+                "B": "Pentagon",
+                "C": "Octagon",
+                "D": "Square"
+              },
+              "correct": "B"
             },
-            "correct": "A"
-          },
-          {
-            "question": "Round 523 to the nearest hundred.",
-            "answers": {
-              "A": "500",
-              "B": "520",
-              "C": "530",
-              "D": "600"
+            {
+              "question": "A square is also a:",
+              "answers": {
+                "A": "Triangle",
+                "B": "Circle",
+                "C": "Rectangle",
+                "D": "Hexagon"
+              },
+              "correct": "C"
             },
-            "correct": "A"
-          },
-          {
-            "question": "Which shows 6 hundreds, 0 tens, and 9 ones?",
-            "answers": {
-              "A": "609",
-              "B": "690",
-              "C": "960",
-              "D": "906"
+            {
+              "question": "Which group of shapes are all quadrilaterals?",
+              "answers": {
+                "A": "Triangle, square, circle",
+                "B": "Square, rectangle, trapezoid",
+                "C": "Circle, hexagon, pentagon",
+                "D": "Triangle, pentagon, octagon"
+              },
+              "correct": "B"
             },
-            "correct": "A"
-          },
-          {
-            "question": "What is 300 + 150?",
-            "answers": {
-              "A": "350",
-              "B": "420",
-              "C": "450",
-              "D": "550"
+            {
+              "question": "Which shape has 8 equal sides and 8 angles?",
+              "answers": {
+                "A": "Hexagon",
+                "B": "Octagon",
+                "C": "Pentagon",
+                "D": "Rectangle"
+              },
+              "correct": "B"
+            }
+          ]
+        },
+
+        "NBT": {
+          "name": "Number and Operations in Base Ten",
+          "description": "Understand the place value system.",
+          "questions": [
+            {
+              "question": "In the number 482, what is the value of the digit 8?",
+              "answers": {
+                "A": "8",
+                "B": "80",
+                "C": "800",
+                "D": "8,000"
+              },
+              "correct": "B"
             },
-            "correct": "C"
-          },
-          {
-            "question": "Which comparison is true?",
-            "answers": {
-              "A": "368 < 286",
-              "B": "412 > 421",
-              "C": "507 > 495",
-              "D": "299 > 301"
+            {
+              "question": "Which number is the same as 3 hundreds, 5 tens, and 2 ones?",
+              "answers": {
+                "A": "352",
+                "B": "325",
+                "C": "532",
+                "D": "523"
+              },
+              "correct": "A"
             },
-            "correct": "C"
-          },
-          {
-            "question": "What is 700 - 248?",
-            "answers": {
-              "A": "452",
-              "B": "462",
-              "C": "552",
-              "D": "472"
+            {
+              "question": "Round 368 to the nearest ten.",
+              "answers": {
+                "A": "360",
+                "B": "370",
+                "C": "380",
+                "D": "400"
+              },
+              "correct": "B"
             },
-            "correct": "B"
-          }
-        ]
-      },
-      "OA": {
-        "name": "Operations in Algebraic Thinking",
-        "description": "Use properties of operations to generate equivalent expressions.",
-        "questions": [
-          {
-            "question": "A farmer packs 5 apples in each bag. He fills 7 bags. How many apples does he pack?",
-            "answers": {
-              "A": "25",
-              "B": "30",
-              "C": "35",
-              "D": "40"
+            {
+              "question": "Which number is greater?",
+              "answers": {
+                "A": "497",
+                "B": "479",
+                "C": "447",
+                "D": "497 and 479 are equal"
+              },
+              "correct": "A"
             },
-            "correct": "C"
-          },
-          {
-            "question": "There are 24 cookies and 6 kids. If they share equally, how many cookies does each kid get?",
-            "answers": {
-              "A": "3",
-              "B": "4",
-              "C": "5",
-              "D": "6"
+            {
+              "question": "What is 400 + 20 + 7?",
+              "answers": {
+                "A": "427",
+                "B": "472",
+                "C": "247",
+                "D": "274"
+              },
+              "correct": "A"
             },
-            "correct": "B"
-          },
-          {
-            "question": "Maria has 3 rows of stickers with 8 stickers in each row. How many stickers does she have in all?",
-            "answers": {
-              "A": "11",
-              "B": "21",
-              "C": "24",
-              "D": "32"
+            {
+              "question": "Round 523 to the nearest hundred.",
+              "answers": {
+                "A": "500",
+                "B": "520",
+                "C": "530",
+                "D": "600"
+              },
+              "correct": "A"
             },
-            "correct": "C"
-          },
-          {
-            "question": "A bookshelf has 4 shelves. Each shelf holds 9 books. How many books can the bookshelf hold?",
-            "answers": {
-              "A": "13",
-              "B": "27",
-              "C": "36",
-              "D": "45"
+            {
+              "question": "Which shows 6 hundreds, 0 tens, and 9 ones?",
+              "answers": {
+                "A": "609",
+                "B": "690",
+                "C": "960",
+                "D": "906"
+              },
+              "correct": "A"
             },
-            "correct": "C"
-          },
-          {
-            "question": "Tom has 42 marbles. He wants to share them equally among 7 friends. How many marbles does each friend get?",
-            "answers": {
-              "A": "5",
-              "B": "6",
-              "C": "7",
-              "D": "8"
+            {
+              "question": "What is 300 + 150?",
+              "answers": {
+                "A": "350",
+                "B": "420",
+                "C": "450",
+                "D": "550"
+              },
+              "correct": "C"
             },
-            "correct": "B"
-          },
-          {
-            "question": "A classroom has 5 tables. Each table has 6 chairs. How many chairs are in the classroom?",
-            "answers": {
-              "A": "11",
-              "B": "25",
-              "C": "30",
-              "D": "35"
+            {
+              "question": "Which comparison is true?",
+              "answers": {
+                "A": "368 < 286",
+                "B": "412 > 421",
+                "C": "507 > 495",
+                "D": "299 > 301"
+              },
+              "correct": "C"
             },
-            "correct": "C"
-          },
-          {
-            "question": "Sarah baked 32 cupcakes. She puts 4 cupcakes in each box. How many boxes does she need?",
-            "answers": {
-              "A": "6",
-              "B": "7",
-              "C": "8",
-              "D": "9"
+            {
+              "question": "What is 700 - 248?",
+              "answers": {
+                "A": "452",
+                "B": "462",
+                "C": "552",
+                "D": "472"
+              },
+              "correct": "B"
+            }
+          ]
+        },
+
+        "OA": {
+          "name": "Operations in Algebraic Thinking",
+          "description": "Use properties of operations to generate equivalent expressions.",
+          "questions": [
+            {
+              "question": "A farmer packs 5 apples in each bag. He fills 7 bags. How many apples does he pack?",
+              "answers": {
+                "A": "25",
+                "B": "30",
+                "C": "35",
+                "D": "40"
+              },
+              "correct": "C"
             },
-            "correct": "C"
-          },
-          {
-            "question": "A store has 8 packs of pencils. Each pack has 10 pencils. How many pencils are there in all?",
-            "answers": {
-              "A": "18",
-              "B": "80",
-              "C": "88",
-              "D": "100"
+            {
+              "question": "There are 24 cookies and 6 kids. If they share equally, how many cookies does each kid get?",
+              "answers": {
+                "A": "3",
+                "B": "4",
+                "C": "5",
+                "D": "6"
+              },
+              "correct": "B"
             },
-            "correct": "B"
-          },
-          {
-            "question": "There are 45 students going on a field trip. If 9 students can fit in each van, how many vans are needed?",
-            "answers": {
-              "A": "4",
-              "B": "5",
-              "C": "6",
-              "D": "7"
+            {
+              "question": "Maria has 3 rows of stickers with 8 stickers in each row. How many stickers does she have in all?",
+              "answers": {
+                "A": "11",
+                "B": "21",
+                "C": "24",
+                "D": "32"
+              },
+              "correct": "C"
             },
-            "correct": "B"
-          },
-          {
-            "question": "Jake has 7 bags of toys. Each bag has 6 toys. How many toys does Jake have?",
-            "answers": {
-              "A": "13",
-              "B": "36",
-              "C": "42",
-              "D": "48"
+            {
+              "question": "A bookshelf has 4 shelves. Each shelf holds 9 books. How many books can the bookshelf hold?",
+              "answers": {
+                "A": "13",
+                "B": "27",
+                "C": "36",
+                "D": "45"
+              },
+              "correct": "C"
             },
-            "correct": "C"
-          }
-        ]
+            {
+              "question": "Tom has 42 marbles. He wants to share them equally among 7 friends. How many marbles does each friend get?",
+              "answers": {
+                "A": "5",
+                "B": "6",
+                "C": "7",
+                "D": "8"
+              },
+              "correct": "B"
+            },
+            {
+              "question": "A classroom has 5 tables. Each table has 6 chairs. How many chairs are in the classroom?",
+              "answers": {
+                "A": "11",
+                "B": "25",
+                "C": "30",
+                "D": "35"
+              },
+              "correct": "C"
+            },
+            {
+              "question": "Sarah baked 32 cupcakes. She puts 4 cupcakes in each box. How many boxes does she need?",
+              "answers": {
+                "A": "6",
+                "B": "7",
+                "C": "8",
+                "D": "9"
+              },
+              "correct": "C"
+            },
+            {
+              "question": "A store has 8 packs of pencils. Each pack has 10 pencils. How many pencils are there in all?",
+              "answers": {
+                "A": "18",
+                "B": "80",
+                "C": "88",
+                "D": "100"
+              },
+              "correct": "B"
+            },
+            {
+              "question": "There are 45 students going on a field trip. If 9 students can fit in each van, how many vans are needed?",
+              "answers": {
+                "A": "4",
+                "B": "5",
+                "C": "6",
+                "D": "7"
+              },
+              "correct": "B"
+            },
+            {
+              "question": "Jake has 7 bags of toys. Each bag has 6 toys. How many toys does Jake have?",
+              "answers": {
+                "A": "13",
+                "B": "36",
+                "C": "42",
+                "D": "48"
+              },
+              "correct": "C"
+            }
+          ]
+        }
       }
     }
   }

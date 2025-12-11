@@ -17,6 +17,7 @@ import Swal from "sweetalert2";
 import questionsData from "./questions.json";
 
 type AnswerKey = "A" | "B" | "C" | "D";
+type Subject = "Math" | "Reading";
 
 interface Question {
   question: string;
@@ -30,16 +31,22 @@ interface Standard {
   questions: Question[];
 }
 
+interface SubjectsData {
+  Reading: Record<string, Standard>;
+  Math: Record<string, Standard>;
+}
+
 interface StandardsData {
-  "NY-3": Record<string, Standard>;
+  "NY-3": SubjectsData;
 }
 
 // Parse the nested JSON structure
 const data = questionsData as StandardsData[];
-const standards = data[0]["NY-3"];
+const subjectsData = data[0]["NY-3"];
 
 // Get standards as array for easier rendering
-const getStandardsList = () => {
+const getStandardsList = (subject: Subject) => {
+  const standards = subjectsData[subject];
   return Object.entries(standards).map(([code, standard]) => ({
     code,
     ...standard,
@@ -50,6 +57,7 @@ const getStandardsList = () => {
 // Icon components for standards
 const StandardIcon = ({ code }: { code: string }) => {
   const icons: Record<string, React.ReactNode> = {
+    // Math icons
     OA: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -75,17 +83,45 @@ const StandardIcon = ({ code }: { code: string }) => {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
       </svg>
     ),
+    // Reading icons
+    R2: (
+      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+      </svg>
+    ),
+    R3: (
+      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+    ),
+    R4: (
+      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+      </svg>
+    ),
+    R6: (
+      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+      </svg>
+    ),
   };
   return icons[code] || icons.OA;
 };
 
 // Color schemes for standards
 const standardColors: Record<string, { bg: string; text: string; gradient: string; light: string }> = {
+  // Math standards
   OA: { bg: "bg-primary-500", text: "text-primary-600", gradient: "from-primary-500 to-primary-600", light: "bg-primary-50" },
   NBT: { bg: "bg-secondary-500", text: "text-secondary-600", gradient: "from-secondary-500 to-secondary-600", light: "bg-secondary-50" },
   NF: { bg: "bg-accent-500", text: "text-accent-600", gradient: "from-accent-500 to-accent-600", light: "bg-accent-50" },
   MD: { bg: "bg-success-500", text: "text-success-600", gradient: "from-success-500 to-success-600", light: "bg-success-50" },
   G: { bg: "bg-error-500", text: "text-error-600", gradient: "from-error-500 to-error-600", light: "bg-error-50" },
+  // Reading standards
+  R2: { bg: "bg-blue-500", text: "text-blue-600", gradient: "from-blue-500 to-blue-600", light: "bg-blue-50" },
+  R3: { bg: "bg-indigo-500", text: "text-indigo-600", gradient: "from-indigo-500 to-indigo-600", light: "bg-indigo-50" },
+  R4: { bg: "bg-violet-500", text: "text-violet-600", gradient: "from-violet-500 to-violet-600", light: "bg-violet-50" },
+  R6: { bg: "bg-fuchsia-500", text: "text-fuchsia-600", gradient: "from-fuchsia-500 to-fuchsia-600", light: "bg-fuchsia-50" },
 };
 
 // Confetti component for celebration
@@ -121,13 +157,30 @@ const Confetti = () => {
   );
 };
 
-// Home screen component
-const HomeScreen = ({
-  onSelectStandard,
+// Subject selection screen component
+const SubjectScreen = ({
+  onSelectSubject,
 }: {
-  onSelectStandard: (code: string) => void;
+  onSelectSubject: (subject: Subject) => void;
 }) => {
-  const standardsList = getStandardsList();
+  const subjects: { key: Subject; name: string; emoji: string; description: string; gradient: string; hoverGradient: string }[] = [
+    {
+      key: "Math",
+      name: "Math",
+      emoji: "🔢",
+      description: "Practice fractions, geometry, measurement, and more!",
+      gradient: "from-primary-500 to-secondary-500",
+      hoverGradient: "from-primary-600 to-secondary-600",
+    },
+    {
+      key: "Reading",
+      name: "Reading",
+      emoji: "📖",
+      description: "Practice themes, character traits, vocabulary, and point of view!",
+      gradient: "from-blue-500 to-violet-500",
+      hoverGradient: "from-blue-600 to-violet-600",
+    },
+  ];
 
   return (
     <motion.div
@@ -152,6 +205,114 @@ const HomeScreen = ({
         </motion.div>
         <h1 className="text-4xl md:text-5xl font-display font-bold gradient-text mb-3">
           NY-3 Practice Exams
+        </h1>
+        <p className="text-neutral-600 text-lg max-w-2xl mx-auto">
+          Choose a subject to get started!
+        </p>
+      </motion.div>
+
+      {/* Subject Cards */}
+      <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        {subjects.map((subject, idx) => (
+          <motion.button
+            key={subject.key}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 + idx * 0.1 }}
+            onClick={() => onSelectSubject(subject.key)}
+            className="group relative overflow-hidden rounded-2xl p-8 text-left transition-all duration-300 hover:scale-[1.02] hover:shadow-glow"
+          >
+            {/* Background gradient */}
+            <div className={`absolute inset-0 bg-gradient-to-br ${subject.gradient} group-hover:${subject.hoverGradient} transition-all duration-300`} />
+
+            {/* Content */}
+            <div className="relative z-10">
+              <motion.span
+                className="text-6xl block mb-4"
+                whileHover={{ scale: 1.1, rotate: 5 }}
+              >
+                {subject.emoji}
+              </motion.span>
+              <h2 className="text-3xl font-display font-bold text-white mb-2">
+                {subject.name}
+              </h2>
+              <p className="text-white/80 text-lg">
+                {subject.description}
+              </p>
+              <div className="mt-4 flex items-center gap-2 text-white font-medium">
+                <span>Start Learning</span>
+                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </motion.button>
+        ))}
+      </div>
+
+      {/* Footer info */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+        className="text-center text-neutral-500 text-sm"
+      >
+        <p>
+          These practice exams align with New York State 3rd Grade Learning Standards
+        </p>
+      </motion.div>
+    </motion.div>
+  );
+};
+
+// Home screen component (Standards selection)
+const HomeScreen = ({
+  subject,
+  onSelectStandard,
+  onBack,
+}: {
+  subject: Subject;
+  onSelectStandard: (code: string) => void;
+  onBack: () => void;
+}) => {
+  const standardsList = getStandardsList(subject);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="space-y-8"
+    >
+      {/* Back button */}
+      <motion.button
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        onClick={onBack}
+        className="flex items-center gap-2 text-neutral-600 hover:text-primary-600 transition-colors font-medium"
+      >
+        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to Subjects
+      </motion.button>
+
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-center"
+      >
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ type: "spring", delay: 0.1 }}
+          className="inline-block mb-4"
+        >
+          <span className="text-6xl">{subject === "Math" ? "🔢" : "📖"}</span>
+        </motion.div>
+        <h1 className="text-4xl md:text-5xl font-display font-bold gradient-text mb-3">
+          {subject} Standards
         </h1>
         <p className="text-neutral-600 text-lg max-w-2xl mx-auto">
           Choose a standard to practice. Master each topic and track your progress!
@@ -1196,20 +1357,33 @@ const TestScreen = ({
 
 // Main App component
 function App() {
-  const [currentView, setCurrentView] = useState<"home" | "test">("home");
+  const [currentView, setCurrentView] = useState<"subject" | "standards" | "test">("subject");
+  const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
   const [selectedStandard, setSelectedStandard] = useState<string | null>(null);
+
+  const handleSelectSubject = (subject: Subject) => {
+    setSelectedSubject(subject);
+    setCurrentView("standards");
+  };
 
   const handleSelectStandard = (code: string) => {
     setSelectedStandard(code);
     setCurrentView("test");
   };
 
-  const handleGoHome = () => {
-    setSelectedStandard(null);
-    setCurrentView("home");
+  const handleBackToSubjects = () => {
+    setSelectedSubject(null);
+    setCurrentView("subject");
   };
 
-  const selectedStandardData = selectedStandard ? standards[selectedStandard] : null;
+  const handleBackToStandards = () => {
+    setSelectedStandard(null);
+    setCurrentView("standards");
+  };
+
+  const selectedStandardData = selectedSubject && selectedStandard
+    ? subjectsData[selectedSubject][selectedStandard]
+    : null;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary-50 via-white to-secondary-50">
@@ -1229,17 +1403,24 @@ function App() {
       <div className="relative min-h-screen flex items-center justify-center p-4 md:p-8">
         <div className="w-full max-w-4xl">
           <AnimatePresence mode="wait">
-            {currentView === "home" ? (
+            {currentView === "subject" ? (
+              <SubjectScreen
+                key="subject"
+                onSelectSubject={handleSelectSubject}
+              />
+            ) : currentView === "standards" && selectedSubject ? (
               <HomeScreen
-                key="home"
+                key={`standards-${selectedSubject}`}
+                subject={selectedSubject}
                 onSelectStandard={handleSelectStandard}
+                onBack={handleBackToSubjects}
               />
             ) : selectedStandardData ? (
               <TestScreen
                 key={`test-${selectedStandard}`}
                 standardCode={selectedStandard!}
                 standard={selectedStandardData}
-                onGoHome={handleGoHome}
+                onGoHome={handleBackToStandards}
               />
             ) : null}
           </AnimatePresence>
